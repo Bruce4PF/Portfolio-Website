@@ -1,21 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Bruce',
+    lastName:  'Liu',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Product Manager',
+    avatar:    '/images/Bruce Liu.png',
+    location:  'Canada/Eastern',        // IANA time zone identifier
+    languages: ['English', 'Mandarin', 'French']  // List of spoken languages
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Subscribe to {person.firstName}'s Shitposts</>,
+    description: <>If you want to read my random thoughts and rants every once in a while, put in your email!</>
 }
 
 const social = [
@@ -24,31 +24,32 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/Bruce4PF/Portfolio-Website',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/bliu445/',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://www.instagram.com/bruce.liu_/',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:bliu.hba2025@ivey.ca'
     },
 ]
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    title: `${person.name}`,
+    description: `My portfolio website showcasing my work as a ${person.role}`,
+    headline: <>Product Manager and Builder</>,
+    subline: <>I'm Bruce, a dual degree Computer Science & Business student at <InlineCode>Ivey Business School</InlineCode> & <InlineCode>Western University</InlineCode>.
+    After hours, I'm building products, communities, and chasing adventures!</>
 }
 
 const about = {
@@ -64,24 +65,25 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://cal.com/bruceliu/30min'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I'm a Canada-born product manager with a passion for building products people love and creating thriving communities! My experience spans from RAG AI, deep learning models, frontend development, end-to-end ownership, and design!</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Symend',
+                timeframe: 'May 2024 - Dec 2024',
+                role: 'Technical Product Manager Intern',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Led a cross-functional team to "make Symend scalable", building a RAG AI onboarding solution 0-1, reducing time to value by over 99% (640 to 2 hours)</>,
+                    <>Delivered MVP 20% ahead of schedule. Secured buy-in and a $220,000 budget for further development from C-suite executives and VPs</>,
+                    <>Defined and prioritized requirements through PRDs and regular backlog grooming, resulting in a 25% increase in sprint velocity</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -93,12 +95,13 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Terra Optima Labs',
+                timeframe: 'May 2023 - Sep 2023',
+                role: 'Product Manager Intern',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Conducted user interviews and identified key product improvements, leading to a 70% faster growth rate in mushroom farming applications</>,
+                    <>Crafted a go-to-market strategy for flagship product. Boosted customer reach by 30% and increased initial sales within selected segments</>,
+                    <>Analyzed product workflows, identifying key areas for process improvement; implemented a humidification system that reduced production time by 29%</>
                 ],
                 images: [ ]
             }
@@ -106,25 +109,25 @@ const about = {
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Ivey Business School',
+                description: <>Bachelor of Arts, Honours Business Administration <br/> September 2023 - April 2025</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'University of Western Ontario',
+                description: <>Bachelor of Science, Computer Science <br/> September 2021 - April 2026</>,
             }
         ]
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Technical skills',
+        title: 'Projects',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Outlook Subscription Manager',
+                description: <>A streamlined inbox organizer tool pitched to Microsoft.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
@@ -142,12 +145,37 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'ChuckleChallenge.com',
+                description: <>Try Not To Laugh with computer vision tracking.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/ChuckleChallenge.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Metal Defect Classifier',
+                description: <>Metal defect dection model, represented Western at a national AI conference.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/ChuckleChallenge.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
