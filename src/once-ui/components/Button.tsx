@@ -7,7 +7,7 @@ import { Spinner, Icon } from '.';
 import styles from './Button.module.scss';
 
 interface CommonProps {
-    variant?: 'primary' | 'secondary' | 'tertiary' | 'danger';
+    variant?: 'primary' | 'secondary' | 'tertiary' | 'danger' | 'quaternary' | 'ghost';
     size?: 's' | 'm' | 'l';
     label?: string;
     prefixIcon?: string;
@@ -18,6 +18,7 @@ interface CommonProps {
     href?: string;
     className?: string;
     style?: React.CSSProperties;
+    fontWeight?: 'medium' | 'strong'; // Added fontWeight prop
 }
 
 export type ButtonProps = CommonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -37,6 +38,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps | AnchorProps>(({
     href,
     className,
     style,
+    fontWeight = 'strong', // Default to 'strong'
     ...props
 }, ref) => {
     const labelSize = size === 'l' ? 'font-l' : size === 'm' ? 'font-m' : 'font-s';
@@ -46,7 +48,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps | AnchorProps>(({
         <>
             {prefixIcon && !loading && <Icon name={prefixIcon} size={iconSize} />}
             {loading && <Spinner size={size} />}
-            <div className={`font-label font-strong ${styles.label} ${labelSize}`}>{label || children}</div>
+            <div className={`font-label ${fontWeight === 'strong' ? 'font-strong' : 'font-medium'} ${styles.label} ${labelSize}`}>{label || children}</div>
             {suffixIcon && <Icon name={suffixIcon} size={iconSize} />}
         </>
     );

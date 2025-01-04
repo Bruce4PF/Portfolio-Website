@@ -108,8 +108,8 @@ const about = {
                 timeframe: 'Oct 2021 - Sep 2022',
                 role: 'Product Manager Intern',
                 achievements: [
-                    <>Pioneered product marketing campaign by introducing sponsor program, leading to a 25% increase in site traffic.</>,
-                    <>Championed ideation and development for a new product by creating roadmap, sourcing suppliers, and testing product iteratively over two months, resulting in 6 product variations.</>
+                    <>Pioneered product marketing campaign by introducing sponsor program, leading to a 25% increase in site traffic</>,
+                    <>Championed ideation and development for a new product by creating roadmap, sourcing suppliers, and testing product iteratively over two months, resulting in 6 product variations</>
                 ],
                 images: [ ]
             }

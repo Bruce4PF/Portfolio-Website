@@ -59,6 +59,18 @@
     }
 }
 
+.quaternary {
+    box-shadow: inset 0 var(--solid-inset-distance) var(--solid-inset-size) var(--solid-inset-color-neutral);
+    background: var(--brand-alpha-weak);
+    border: 1px solid var(--brand-alpha-medium);
+    color: var(--neutral-on-background-strong);
+
+    &:hover, &:focus {
+        background: var(--brand-alpha-weak);
+        border-color: var(--brand-alpha-medium);
+    }
+}
+
 .ghost {
     border: none;
     background: var(--static-transparent);
