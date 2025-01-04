@@ -1,0 +1,49 @@
+---
+title: "The Struggle of Centering a Div"
+publishedAt: "2025-01-04"
+image: "/images/gallery/Center Div.png"
+summary: "Three hours spent trying to center a button taught me patience, humility, and the value of debugging basics."
+tag: "Journal"
+---
+
+# The Struggle of Centering Components  
+
+Every developer has those days—those maddening, soul-testing days where you spend hours fighting a seemingly trivial problem. Today was one of those days for me. Three hours. Three long hours. And all I was trying to do was format a button.
+
+## The Frustration of Centering  
+
+You’d think centering something like a button would be easy. After all, we’ve got **CSS Flexbox** and **Grid**, right? But no, somehow, centering a button becomes a black hole of frustration where no amount of `justify-content`, `align-items`, or `margin: auto;` seems to work. I tried everything:  
+- Nested `div`s.  
+- Inline styles.  
+- Adjusting padding and margins pixel by pixel like a caveman.  
+
+Nothing worked. It was as if the button itself had become sentient and was mocking me from its off-centered perch.
+
+<CodeBlock
+  className="my-24"
+  compact
+  codeInstances={[
+    {
+      code: `<Button
+  className="centered-button"
+  style={{ margin: "0 auto" }}>
+  Click Me
+</Button>`,
+      label: "React + CSS",
+      language: "tsx",
+    },
+  ]}
+  copyButton
+/>
+
+## What I Learned  
+
+What started as a routine task ended up being a lesson in patience and humility. Sometimes, the simplest problems force you to go back to basics, re-read documentation, and—yes—question all of your life choices. Eventually, I figured it out. The culprit? A sneaky parent container with a `position: relative;` that was quietly breaking the layout.  
+
+## Moving Forward  
+
+Today reminded me that development is as much about resilience as it is about logic. It’s the small wins, like a perfectly centered button, that make the endless debugging worth it. And hey, next time I face a centering issue, I’ll know to start by checking the parent containers.
+
+---
+
+If you’ve ever spent hours wrestling with a layout issue, you’re not alone. Lots of Stack Overflow posts prove that. 😊
