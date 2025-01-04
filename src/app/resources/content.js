@@ -13,8 +13,8 @@ const person = {
 }
 
 const newsletter = {
-    display: true,
-    title: <>Subscribe to {person.firstName}'s Shitposts</>,
+    display: false,
+    title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>If you want to read my random thoughts and rants every once in a while, put in your email!</>
 }
 
@@ -83,11 +83,10 @@ const about = {
                 achievements: [
                     <>Led a cross-functional team to "make Symend scalable", building a RAG AI onboarding solution 0-1, reducing time to value by over 99% (640 to 2 hours)</>,
                     <>Delivered MVP 20% ahead of schedule. Secured buy-in and a $220,000 budget for further development from C-suite executives and VPs</>,
-                    <>Defined and prioritized requirements through PRDs and regular backlog grooming, resulting in a 25% increase in sprint velocity</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
+                        src: '/images/projects/project-01/Symend.png',
                         alt: 'Once UI Project',
                         width: 16,
                         height: 9
@@ -101,7 +100,16 @@ const about = {
                 achievements: [
                     <>Conducted user interviews and identified key product improvements, leading to a 70% faster growth rate in mushroom farming applications</>,
                     <>Crafted a go-to-market strategy for flagship product. Boosted customer reach by 30% and increased initial sales within selected segments</>,
-                    <>Analyzed product workflows, identifying key areas for process improvement; implemented a humidification system that reduced production time by 29%</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Zentein Nutrition Inc.',
+                timeframe: 'Oct 2021 - Sep 2022',
+                role: 'Product Manager Intern',
+                achievements: [
+                    <>Pioneered product marketing campaign by introducing sponsor program, leading to a 25% increase in site traffic.</>,
+                    <>Championed ideation and development for a new product by creating roadmap, sourcing suppliers, and testing product iteratively over two months, resulting in 6 product variations.</>
                 ],
                 images: [ ]
             }
@@ -123,21 +131,21 @@ const about = {
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Projects',
+        title: 'Technical Skills',
         skills: [
             {
-                title: 'Outlook Subscription Manager',
-                description: <>A streamlined inbox organizer tool pitched to Microsoft.</>,
+                title: 'Figma',
+                description: <>Able to create beautiful designs and prototypes lightning fast.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/projects/project-01/Figma 1.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/projects/project-01/Outlook Subscription Manager Prototype 3.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -145,12 +153,12 @@ const about = {
                 ]
             },
             {
-                title: 'ChuckleChallenge.com',
-                description: <>Try Not To Laugh with computer vision tracking.</>,
+                title: 'Deep Learning Models',
+                description: <>Finding ways to revolutionize the world with AI.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/Deep Learning Models 2.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -164,18 +172,18 @@ const about = {
                 ]
             },
             {
-                title: 'Metal Defect Classifier',
-                description: <>Metal defect dection model, represented Western at a national AI conference.</>,
+                title: 'Next.js',
+                description: <>Building quick, responsive, eye-catching websites.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/IPS Website.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/ChuckleChallenge.png',
+                        src: '/images/projects/project-01/ChuckleChallenge Cover 2.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
