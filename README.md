@@ -14,7 +14,7 @@ This website serves as a portfolio to display my projects, blog posts, and provi
 - Blog section with posts
 - Gallery with images
 - Social media links
-- 
+  
 ## Technologies Used
 
 - Next.js
