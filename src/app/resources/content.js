@@ -212,79 +212,83 @@ const work = {
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
+    title: 'My photos!',
+    description: `${person.name}'s life in photos`,
     images: [
         { 
-            src: '/images/gallery/img-01.jpg', 
+            src: '/images/gallery/img1.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+            src: '/images/gallery/img16.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-04.jpg', 
+            src: '/images/gallery/img7.jpg', 
             alt: 'image',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+            src: '/images/gallery/img15.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+            src: '/images/gallery/img5.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-09.jpg', 
+            src: '/images/gallery/img4.jpg', 
             alt: 'image',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+            src: '/images/gallery/img17.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-12.jpg', 
+            src: '/images/gallery/img6.jpg', 
             alt: 'image',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-13.jpg', 
+            src: '/images/gallery/img8.jpg', 
+            alt: 'image',
+            orientation: 'vertical'
+        },
+        { 
+            src: '/images/gallery/img9.jpg', 
+            alt: 'image',
+            orientation: 'vertical'
+        },
+        { 
+            src: '/images/gallery/img11.jpg', 
+            alt: 'image',
+            orientation: 'vertical'
+        },
+        { 
+            src: '/images/gallery/img12.jpg', 
+            alt: 'image',
+            orientation: 'vertical'
+        },
+        { 
+            src: '/images/gallery/img14.jpg', 
             alt: 'image',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-14.jpg', 
+            src: '/images/gallery/img18.jpg', 
             alt: 'image',
-            orientation: 'horizontal'
+            orientation: 'vertical'
+        },
+        { 
+            src: '/images/gallery/img19.jpg', 
+            alt: 'image',
+            orientation: 'vertical'
         },
     ]
 }
