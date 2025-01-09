@@ -92,7 +92,7 @@ export default function Home(
 								}}
 							>
 								<LetterFx
-									speed="medium"
+									speed="slow"
 									trigger="instant"
 									charset={[
 										'X',
