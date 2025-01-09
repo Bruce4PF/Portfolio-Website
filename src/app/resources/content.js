@@ -47,7 +47,7 @@ const home = {
     label: 'Home',
     title: `${person.name}`,
     description: `My portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Product Manager and Builder</>,
+    headline: <>Product Manager and Community Builder</>,
     subline: <>I'm Bruce, a dual degree Computer Science & Business student at <InlineCode>Ivey Business School</InlineCode> & <InlineCode>Western University</InlineCode>.
     After hours, I'm building products, communities, and chasing adventures!</>
 }
