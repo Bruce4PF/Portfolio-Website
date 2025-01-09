@@ -1,6 +1,6 @@
 "use client";
 
-import { Flex, Heading, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
+import { Flex, Heading, LetterFx, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
 import styles from './Posts.module.scss';
 import { formatDate } from '@/app/utils/formatDate';
 
@@ -50,14 +50,42 @@ export default function Post({ post, thumbnail }: PostProps) {
                         as="h2"
                         variant="heading-strong-l"
                         wrap="balance">
-                        {post.metadata.title}
+                        <span
+                            style={{
+                                fontFamily: 'var(--font-family-code)'
+                            }}
+                        >
+                            <LetterFx
+                                speed="medium"
+                                trigger="hover"
+                                charset={[
+                                    'X',
+                                    '@',
+                                    '$',
+                                    'a',
+                                    'H',
+                                    'z',
+                                    'o',
+                                    '0',
+                                    'y',
+                                    '#',
+                                    '?',
+                                    '*',
+                                    '0',
+                                    '1',
+                                    '+'
+                                ]}
+                            >
+                                {post.metadata.title}
+                            </LetterFx>
+                        </span>
                     </Heading>
                     <Text
                         variant="label-default-s"
                         onBackground="neutral-weak">
                         {formatDate(post.metadata.publishedAt, false)}
                     </Text>
-                    { post.metadata.tag &&
+                    {post.metadata.tag &&
                         <Tag
                             className="mt-8"
                             label={post.metadata.tag}

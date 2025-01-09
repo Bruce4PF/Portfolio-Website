@@ -92,7 +92,7 @@ export default function Home(
 								}}
 							>
 								<LetterFx
-									speed="slow"
+									speed="medium"
 									trigger="instant"
 									charset={[
 										'X',
@@ -143,7 +143,35 @@ export default function Home(
 											src={person.avatar}
 											size="m" />
 									)}
-									{t("about.title")}
+									<span
+										style={{
+											fontFamily: 'var(--font-family-code)'
+										}}
+									>
+										<LetterFx
+											speed="medium"
+											trigger="hover"
+											charset={[
+												'X',
+												'@',
+												'$',
+												'a',
+												'H',
+												'z',
+												'o',
+												'0',
+												'y',
+												'#',
+												'?',
+												'*',
+												'0',
+												'1',
+												'+'
+											]}
+										>
+											{t("about.title")}
+										</LetterFx>
+									</span>
 									<Arrow trigger="#about" />
 								</Flex>
 							</Button>
