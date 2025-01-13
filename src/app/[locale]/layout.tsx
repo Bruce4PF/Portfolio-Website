@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
@@ -135,6 +136,7 @@ export default async function RootLayout({
 					</Flex>
 					<Footer/>
 					<Analytics />
+					<SpeedInsights />
 				</Flex>
 			</Flex>
 		</NextIntlClientProvider>
