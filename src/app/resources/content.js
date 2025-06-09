@@ -77,6 +77,23 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
+                company: 'Loop',
+                timeframe: 'May 2025 - September 2025',
+                role: 'Product Manager & GTM Intern',
+                achievements: [
+                    <>Owned Loop's Interac e-Transfer feature end-to-end, reducing deposit times by 99.99%% (2 days to 30 seconds), significantly improving user experience and reducing support tickets</>,
+                    <>Launched an interactive product demo on Loop's website, leading to a 20% sales conversion increase by enabling users to explore Loop's platform</>,
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/Loop Financial.png',
+                        alt: 'Loop Financial Website',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
                 company: 'Symend',
                 timeframe: 'May 2024 - Dec 2024',
                 role: 'Technical Product Manager Intern',
@@ -87,7 +104,7 @@ const about = {
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
                         src: '/images/projects/project-01/Symend.png',
-                        alt: 'Once UI Project',
+                        alt: 'Symend Website',
                         width: 16,
                         height: 9
                     }
