@@ -136,7 +136,7 @@ export default function About(
                             </Flex>
                         )}
                         <Button
-                            href="/Bruce Liu Resume.pdf"
+                            href="/Bruce Liu Resume Public.pdf"
                             variant="quaternary"
                             size="s"
                             id="trigger"

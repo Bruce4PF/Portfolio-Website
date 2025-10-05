@@ -81,8 +81,8 @@ const about = {
                 timeframe: 'May 2025 - September 2025',
                 role: 'Product Manager & GTM Intern',
                 achievements: [
-                    <>Owned Loop's Interac e-Transfer feature end-to-end, reducing deposit times by 99.99% (2 days to 30 seconds), significantly improving user experience and reducing support tickets</>,
-                    <>Launched an interactive product demo on Loop's website, leading to a 20% sales conversion increase by enabling users to explore Loop's platform</>,
+                    <>Reduced deposit times by 99.99% (from 2 days to 30 seconds) by owning the end-to-end development and deployment of Loop's Interac e-Transfer feature.</>,
+                    <>Identified that 40%+ of new users discovered Loop through LLMs, leading to creation of an automated content generation tool to dominate SEO, GEO, and AEO, resulting in a 47% increase in organic search-driven sign-ups within one quarter.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
